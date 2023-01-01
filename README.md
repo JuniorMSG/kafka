@@ -20,6 +20,15 @@
     docker-compose up -d
     docker ps 
 
+
+## linux docker 설정 추가
+    apt install sudo
+    sudo apt install yum
+    sudo apt-get update && sudo apt-get dist-upgrade
+
+    apt-get install vim-common 
+
+
 <img width="506" alt="image" src="https://user-images.githubusercontent.com/22822369/210160870-d22f1099-6649-43cf-bfb3-b51b4b00225c.png">
 
 <img width="1245" alt="image" src="https://user-images.githubusercontent.com/22822369/210160949-6240668f-85d4-4568-ae14-15d5f39cdb4d.png">
@@ -105,19 +114,22 @@
     /var/lib/kafka/data
     /var/lib/kafka/data/peter-docker01-0
 
+<img width="511" alt="image" src="https://user-images.githubusercontent.com/22822369/210171480-670aad4d-15ab-46ad-9d25-1d498293b4d3.png">
+
+## 3.2 카프카의 핵심 개념
+    카프카는 높은 처리량, 빠른 응답속도, 안정성을 가지고 있다.
+    why?
+    1. 분산 시스템
+    2. 페이지 캐시
+    3. 배치 전송 쿼리
+    4. 압축 전송 
+    5. 토픽, 파티션, 오프셋
+    6. 고가용성 보장
+    7. 주키퍼의 의존성
+    
 
 
-
-
-
-## linux docker 설정 추가
-    apt install sudo
-    sudo apt install yum
-    sudo apt install xxd
-
-
-
-
+###
 
 
 
