@@ -223,10 +223,24 @@
     패스!
     중복 없는 전송, 정확히 한 번 전송에 대한 실습등을 할때 사용합니다.
 
-### 예제
+## 예제
+    Java를 이용한 프로듀서
+    docker exec -it kafka /bin/bash
     kafka-topics --bootstrap-server kafka:9092 --create --topic peter-basic01 --partitions 1 --replication-factor 1
 
+![image](https://user-images.githubusercontent.com/22822369/210247185-9a36eab2-2a81-48e3-8af2-63d58afca257.png)
+
+### 프로듀서의 전송방법
+    메시지를 보내고 확인하지 않기
+    동기 전송
+    콜백
+    비동기 전송
+
+
+
     
+    
+
     
 
 
