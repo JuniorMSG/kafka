@@ -28,8 +28,6 @@ public class EmailService {
         System.out.println("\n\n 2nd ===> get Mail Session..");
         getMailSession = Session.getDefaultInstance(mailServerProperties, null);
         generateMailMessage = new MimeMessage(getMailSession);
-        generateMailMessage.addRecipient(Message.RecipientType.TO, new InternetAddress("milk6645@naver.com"));
-        generateMailMessage.addRecipient(Message.RecipientType.TO, new InternetAddress("milk6645@naver.com"));
         generateMailMessage.setSubject("Greetings from Crunchify..");
         String emailBody = "Test email by Crunchify.com JavaMail API example. " + "<br><br> Regards, <br>Crunchify Admin";
         generateMailMessage.setContent(emailBody, "text/html");
@@ -41,7 +39,7 @@ public class EmailService {
 
         // Enter your correct gmail UserID and Password
         // if you have 2FA enabled then provide App Specific Password
-        transport.connect("smtp.naver.com", "milk6645", "dkfltnsrltkfkd($");
+        transport.connect("smtp.naver.com", "", "");
         transport.sendMessage(generateMailMessage, generateMailMessage.getAllRecipients());
         transport.close();
     }
