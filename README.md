@@ -85,8 +85,8 @@
 
 ### 3. 컨슈머 실행
 
-    docker exec -it kafka /bin/bash\
-    kafka-console-producer --bootstrap-server kafka:9092 --topic peter-docker01
+    docker exec -it kafka /bin/bash
+    kafka-console-consumer --bootstrap-server kafka:9092 --topic peter-docker01
 
 ### 4. 메세지 테스트
 

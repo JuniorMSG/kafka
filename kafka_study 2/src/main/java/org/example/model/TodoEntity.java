@@ -10,6 +10,7 @@ import javax.persistence.*;
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
+@Table(name = "todos", catalog = "kafka")
 public class TodoEntity {
 
     @Id
